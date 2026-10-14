@@ -161,7 +161,10 @@ A subsequent 200,000-client diagnostic with a 30-second ramp and 60-second
 hold failed the latency requirements: hold p95 5.26 seconds and p99 7.37
 seconds, with 285 failed requests out of 1,449,122 total. Consequently,
 150,000 is the highest sustained passing level verified here; the maximum
-capacity has not been established.
+capacity has not been established. On the same 200,000-client diagnostic,
+PR #26 achieved hold p95 859 ms and p99 1,008 ms, also missing the limits
+but performing better than this implementation. These are individual trials
+on a shared WSL host, not a statistically controlled capacity ranking.
 
 ## License
 
