@@ -1,0 +1,5 @@
+/bin/
+/deps/
+/build/
+/results/
+__pycache__/
